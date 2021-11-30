@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Cuprum', sans-serif;
+
+}
+body{
+    width: 100vw;
+    height: 200vh;
+}
+.heading{
+    // background-image: url("../header/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // height: 200px;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: rgb(245, 196, 196);
+    padding: 20px 60px;
+    text-shadow: 2px 2px 5px rgb(46, 9, 9);
+    background: linear-gradient(to bottom right,
+      #ce7b7b 8.333%, 
+      #812023 16.666%, 
+      #f59c83 16.666%, 
+      #a8492e 33.333%, 
+      #f8aa6e 33.333%, 
+      #b96a2e 50%, 
+      #c2d389 50%, 
+      #6e8525 66.666%, 
+      #a5b9e6 66.666%, 
+      #5f83d3 83.333%, 
+      #7a3c5e 83.333%);}
+
+
+
+.container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+    .question {
+        background: linear-gradient(to right, #a85f67,#f7bbc1); 
+        color: rgb(252, 221, 221); 
+ 
+        cursor: pointer;
+        padding: 30px 20px;
+        width: 60%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+        
+    }
+    
+    .answer{
+        margin: auto;
+        width: 50%; 
+        padding: auto;
+    }
+    .line{
+    margin: auto; 
+    }
+}
+.active,.question:hover {
+    background: linear-gradient(to right, #f7bbc1, #a85f67);
+    color: rgb(77, 49, 49);
+}
+
+.answer{
+    padding: 30px 100px;
+    display: none;
+    overflow: hidden;
+    background: linear-gradient(to right, #403a3e, #be5869);
+    p{
+        color: rgb(252, 221, 221); 
+
+    }
+
+}
+.question:after {
+    content: '\003E';    
+    display: flex;
+    justify-content: end;
+    font-size: 13px;
+    color: rgb(43, 22, 22);
+    margin-left: 5px;
+}
+.active:after {
+    content: "\02C5";
+}
+    
